@@ -1,0 +1,53 @@
+{
+  "name": "jingle",
+  "description": "Generic Jingle via WebRTC session manager.",
+  "version": "3.0.3",
+  "author": "Lance Stout <lance@andyet.net>",
+  "bugs": "https://github.com/otalk/jingle.js/issues",
+  "contributors": [
+    "Philipp Hancke <fippo@andyet.net>",
+    "Lloyd Watkin"
+  ],
+  "dependencies": {
+    "extend-object": "^1.0.0",
+    "intersect": "^0.1.0",
+    "jingle-filetransfer-session": "^2.0.0",
+    "jingle-media-session": "^2.0.0",
+    "jingle-session": "^2.0.0",
+    "wildemitter": "^1.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^7.0.2",
+    "covert": "^1.0.0",
+    "jshint": "^2.5.5",
+    "nsp": "^0.5.2",
+    "precommit-hook": "^1.0.7",
+    "tap-spec": "^0.2.1",
+    "tape": "^2.14.0",
+    "testling": "^1.7.1",
+    "travis-multirunner": "^4.0.0",
+    "uglify-js": "^2.4.15",
+    "webrtc-adapter-test": "^0.1.4"
+  },
+  "homepage": "https://github.com/otalk/jingle.js",
+  "keywords": [
+    "webrtc",
+    "xmpp",
+    "jingle"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/otalk/jingle.js.git"
+  },
+  "scripts": {
+    "audit": "make audit",
+    "build": "make build",
+    "test": "jshint .",
+    "test-travis": "test/run-tests"
+  },
+  "testling": {
+    "files": "test/*.js"
+  }
+}
